@@ -1,12 +1,19 @@
 <!-- Describe task in general -->
 
 <p>
-    Sum two passed ints
+    Your goal is create the fastest sorting algorithm ever - Sort By Removing.
 </p>
 
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+<p>
+    You just need to remove all elements from a given array that are in incorrect order. As always, we have some conditions:
 </p>
+
+<ul>
+    <li>it is asc sorting</li>
+    <li>first element should always stay in the result list</li>
+    <li>the result of empty list is empty list</li>
+    <li>elements are always integers</li>
+</ul>
 
 <!-- Explain input and output values -->
 <p>
@@ -25,12 +32,18 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sumTwo(2, 3) == 5
-sumTwo(5, 7) == 12
+<pre class="brush: javascript">sortByRemoving([3, 5, 2, 6]) == [3, 5, 6]
+sortByRemoving([7, 6, 5, 4, 3, 2, 1]) == [7]
+sortByRemoving([3, 3, 3, 3]) == [3, 3, 3, 3]
+sortByRemoving([5, 6, 7, 0, 7, 0, 10]) == [5, 6, 7, 7, 10]
+sortByRemoving([1, 5, 2, 3, 4, 7, 8]) == [1, 5, 7, 8]
 </pre>
 {% else %}
-<pre class="brush: python">sum_two(2, 3) == 5
-sum_two(5, 7) == 12
+<pre class="brush: python">sort_by_removing([3, 5, 2, 6]) == [3, 5, 6]
+sort_by_removing([7, 6, 5, 4, 3, 2, 1]) == [7]
+sort_by_removing([3, 3, 3, 3]) == [3, 3, 3, 3]
+sort_by_removing([5, 6, 7, 0, 7, 0, 10]) == [5, 6, 7, 7, 10]
+sort_by_removing([1, 5, 2, 3, 4, 7, 8]) == [1, 5, 7, 8]
 </pre>
 {% endif %}
 </div>
