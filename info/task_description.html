@@ -9,10 +9,10 @@
 </p>
 
 <ul>
-    <li>it's an asc sorting;</li>
+    <li>it's a non-descending sorting;</li>
     <li>the first element should always stay in the result list;</li>
     <li>the result of an empty list is an empty list;</li>
-    <li>the elements are always integers.</li>
+    <li>the elements are always non-negative integers.</li>
 </ul>
 
 <!-- Explain input and output values -->
@@ -20,9 +20,9 @@
     <strong>Input: </strong>
     
 {% if interpreter.slug == "js-node" %}
-    An array of integers.
+    An array of non-negative integers.
 {% else %}
-    A list of ints.
+    A list of non-negative ints.
 {% endif %}
 </p>
 
@@ -30,9 +30,9 @@
     <strong>Output: </strong>
 
 {% if interpreter.slug == "js-node" %}
-    An array of integers.
+    An array of non-negative integers.
 {% else %}
-    A list of ints.
+    A list of non-negative ints.
 {% endif %}
 </p>
 
@@ -40,7 +40,7 @@
 <!-- Give some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>Examples:</strong>
     </p>
 
 {% if interpreter.slug == "js-node" %}
